@@ -76,6 +76,7 @@ export default function BookForm() {
                     }
                     className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                     placeholder="Enter Book ID"
+                    required={true}
                   />
                 </div>
               </div>
@@ -94,6 +95,7 @@ export default function BookForm() {
                     onChange={(e)=>{setBookTitle(e.target.value)}}
                     className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                     placeholder="Enter Book Title"
+                    required={true}
                   />
                 </div>
               </div>
@@ -112,6 +114,7 @@ export default function BookForm() {
                    onChange={(e)=>{setBookAuthor(e.target.value)}}
                     className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                     placeholder="Enter Book Author"
+                    required={true}
                   />
                 </div>
               </div>
@@ -130,6 +133,7 @@ export default function BookForm() {
                     onChange={(e)=>{setBookPrice(e.target.value)}}
                     className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                     placeholder="Enter Book Price"
+                    required={true}
                   />
                 </div>
               </div>
@@ -148,6 +152,7 @@ export default function BookForm() {
                     onChange={(e)=>{setBookCategory(e.target.value)}}
                     className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                     placeholder="Enter Book Category"
+                    required={true}
                   />
                 </div>
               </div>
@@ -182,6 +187,7 @@ export default function BookForm() {
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   defaultValue={bookDescription}
                   onChange={(e)=>{setBookDescription(e.target.value)}}
+                  required={true}
                 />
               </div>
               <p className="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about the book.</p>
@@ -199,7 +205,7 @@ export default function BookForm() {
                       className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
                     >
                       <span>Upload a file</span>
-                      <input name="file-upload" type="file" onChange={uploadFile} />
+                      <input name="file-upload" type="file" onChange={uploadFile} required={true}/>
                     </label>
                     
                   </div>
